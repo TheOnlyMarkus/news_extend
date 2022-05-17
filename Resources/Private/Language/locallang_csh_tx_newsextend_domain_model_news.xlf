@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" datatype="plaintext" original="EXT:news_extend/Resources/Private/Language/locallang_csh_tx_newsextend_domain_model_news.xlf" date="2022-05-17T09:42:37Z" product-name="news_extend">
+		<header/>
+		<body>
+			<trans-unit id="teaser_images.description" resname="teaser_images.description">
+				<source>teaserImages</source>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>
