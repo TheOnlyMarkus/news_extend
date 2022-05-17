@@ -51,7 +51,7 @@ $tmp_news_extend_columns = [
                     'tablenames' => 'tx_news_domain_model_news',
                     'table_local' => 'sys_file',
                 ],
-                'maxitems' => 1
+                'maxitems' => 100
             ],
             $GLOBALS['TYPO3_CONF_VARS']['GFX']['imagefile_ext']
         ),
