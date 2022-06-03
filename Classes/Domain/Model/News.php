@@ -1,4 +1,5 @@
 <?php
+
 namespace Webx\NewsExtend\Domain\Model;
 
 
@@ -8,13 +9,14 @@ namespace Webx\NewsExtend\Domain\Model;
  * For the full copyright and license information, please read the
  * LICENSE.txt file that was distributed with this source code.
  *
- * (c) 2022 
+ * (c) 2022
  */
 
 /**
  * News
  */
-class News extends \GeorgRinger\News\Domain\Model\News {
+class News extends \GeorgRinger\News\Domain\Model\News
+{
 
     /**
      * teaserImages
@@ -24,31 +26,34 @@ class News extends \GeorgRinger\News\Domain\Model\News {
      */
     protected $teaserImages = null;
 
-	public function __construct() {
-		//Do not remove the next line: It would break the functionality
-		$this->initStorageObjects();
-	}
+    public function __construct()
+    {
+        //Do not remove the next line: It would break the functionality
+        $this->initStorageObjects();
+    }
 
-	/**
-	 * Initializes all ObjectStorage properties
-	 * Do not modify this method!
-	 * It will be rewritten on each save in the extension builder
-	 * You may modify the constructor of this class instead
-	 *
-	 * @return void
-	 */
-	protected function initStorageObjects() {
+    /**
+     * Initializes all ObjectStorage properties
+     * Do not modify this method!
+     * It will be rewritten on each save in the extension builder
+     * You may modify the constructor of this class instead
+     *
+     * @return void
+     */
+    protected function initStorageObjects()
+    {
 
-		$this->teaserImages = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
+        $this->teaserImages = new \TYPO3\CMS\Extbase\Persistence\ObjectStorage();
 
-	}
+    }
 
     /**
      * Returns the teaserImages
      *
      * @return \TYPO3\CMS\Extbase\Domain\Model\FileReference $teaserImages
      */
-    public function getTeaserImages() {
+    public function getTeaserImages()
+    {
         return $this->teaserImages;
     }
 
@@ -58,7 +63,8 @@ class News extends \GeorgRinger\News\Domain\Model\News {
      * @param \TYPO3\CMS\Extbase\Domain\Model\FileReference $teaserImages
      * @return void
      */
-    public function setTeaserImages(\TYPO3\CMS\Extbase\Domain\Model\FileReference $teaserImages) {
+    public function setTeaserImages(\TYPO3\CMS\Extbase\Domain\Model\FileReference $teaserImages)
+    {
         $this->teaserImages = $teaserImages;
     }
 }
